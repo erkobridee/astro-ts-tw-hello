@@ -14,6 +14,8 @@
 
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
 
+  - [Project Structure | Astro Docs](https://docs.astro.build/en/basics/project-structure/)
+
   - [Import Aliases | Astro Docs](https://docs.astro.build/en/guides/aliases/)
 
   - [Markdown & MDX | Astro Docs](https://docs.astro.build/en/guides/markdown-content/)
