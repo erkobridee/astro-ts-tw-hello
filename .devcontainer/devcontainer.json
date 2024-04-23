@@ -17,7 +17,12 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["dbaeumer.vscode-eslint", "astro-build.astro-vscode"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "astro-build.astro-vscode",
+        "bradlc.vscode-tailwindcss",
+        "unifiedjs.vscode-mdx"
+      ]
     }
   },
 

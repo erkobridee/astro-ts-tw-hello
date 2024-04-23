@@ -1,5 +1,7 @@
 ---
-// Click button, get confetti!
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
 // Styled by Tailwind :)
 ---
 
@@ -8,12 +10,3 @@
 >
 	<slot />
 </button>
-
-<script>
-	import confetti from 'canvas-confetti';
-	const button = document.body.querySelector('button');
-
-	if (button) {
-		button.addEventListener('click', () => confetti());
-	}
-</script>

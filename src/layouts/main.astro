@@ -1,4 +1,16 @@
 ---
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+interface IContent {
+	title: string;
+}
+
+interface Props {
+	content: IContent
+}
+
+
 const { content } = Astro.props;
 ---
 
@@ -7,6 +19,7 @@ const { content } = Astro.props;
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
 		<title>{content.title}</title>
 	</head>
 	<body>

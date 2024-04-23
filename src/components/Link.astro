@@ -1,0 +1,19 @@
+---
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+
+// Styled by Tailwind :)
+---
+
+<a
+  {href}
+  class="p-4 underline hover:text-purple-500 transition-colors ease-in-out duration-200"
+>
+  <slot/>
+</a>
