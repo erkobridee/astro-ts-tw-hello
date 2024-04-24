@@ -1,10 +1,10 @@
 # https://docs.astro.build/en/guides/deploy/github/#configure-a-github-action
 #
-# https://github.com/withastro/action
-#
 # https://github.com/actions/upload-pages-artifact
 #
-# https://github.com/actions/deploy-pages
+# https://github.com/actions/download-artifact
+#
+# https://github.com/peaceiris/actions-gh-pages
 
 name: Deploy to GitHub Pages
 
@@ -18,7 +18,7 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -40,29 +40,8 @@ jobs:
       - name: Build
         run: npm run gh-pages-build
 
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'dist/'
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Download Pages Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: github-pages
-          path: dist
-
-      - name: Display structure of downloaded files
-        run: ls -R dist
-
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: ./dist
