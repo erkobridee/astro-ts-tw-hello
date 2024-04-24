@@ -23,7 +23,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
@@ -52,6 +52,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Download Pages Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: dist
+
+      - name: Display structure of downloaded files
+        run: ls -R dist
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
