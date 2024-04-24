@@ -2,15 +2,13 @@
 
 [Astro Build](https://astro.build/) using [TypeScript](https://www.typescriptlang.org/) plus [TailwindCSS](https://tailwindcss.com/)
 
-
 ## Local Development
 
 - [VS Code](https://code.visualstudio.com/) + [Development Containers](https://containers.dev/) ( [Customizations](https://containers.dev/supporting#visual-studio-code) | [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) )
 
   - [[GitHub] erkobridee/devcontainer-hello](https://github.com/erkobridee/devcontainer-hello) - Learning about Development Containers
 
-
-## Astro 
+## Astro
 
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
 
@@ -21,7 +19,6 @@
   - [Markdown & MDX | Astro Docs](https://docs.astro.build/en/guides/markdown-content/)
 
     - [Configuring Markdown and MDX](https://docs.astro.build/en/guides/markdown-content/#configuring-markdown-and-mdx)
-
 
 ### with Tailwind
 
@@ -37,7 +34,6 @@ Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. Thi
 
 For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
 
-
 ### Editor Setup
 
 - [Editor Setup | Astro Docs](https://docs.astro.build/en/editor-setup/)
@@ -51,3 +47,5 @@ For complete setup instructions, please see our [Tailwind Integration Guide](htt
     - [[GitHub] withastro/prettier-plugin-astro](https://github.com/withastro/prettier-plugin-astro)
 
 - [Get VSCode, eslint & prettier working with Astro | Geek's blog](https://patheticgeek.dev/blog/astro-prettier-eslint-vscode) (2023/02/11)
+
+- [Effortless Code Styling: Configuring Astro with Prettier, ESLint, and Tailwind CSS | Raj Vadeghar](https://r44j.dev/blog/beginner-s-guide-to-setting-up-astro-astro-prettier-eslint-tailwind-css/) (2024/03/03)

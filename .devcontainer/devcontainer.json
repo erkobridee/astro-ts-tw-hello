@@ -18,11 +18,31 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "astro-build.astro-vscode",
         "bradlc.vscode-tailwindcss",
         "unifiedjs.vscode-mdx"
-      ]
+      ],
+      "settings": {
+        "files.autoSave": "onFocusChange",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+        },
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "astro", // Enable .astro
+          "typescript", // Enable .ts
+          "typescriptreact" // Enable .tsx
+        ],
+        "prettier.documentSelectors": ["**/*.svg", "**/*.astro"],
+        "[astro]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
     }
   },
 

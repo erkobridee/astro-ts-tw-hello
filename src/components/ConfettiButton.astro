@@ -1,18 +1,18 @@
 ---
-import Button from "@components/Button.astro";
+import Button from '@components/Button.astro';
 
 // Click button, get confetti!
 ---
 
 <Button>
-	<slot />
+  <slot />
 </Button>
 
 <script>
-	import confetti from 'canvas-confetti';
-	const button = document.body.querySelector('button');
+  import confetti from 'canvas-confetti';
+  const button = document.body.querySelector('button');
 
-	if (button) {
-		button.addEventListener('click', () => confetti());
-	}
+  if (button) {
+    button.addEventListener('click', () => confetti());
+  }
 </script>

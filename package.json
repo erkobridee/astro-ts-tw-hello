@@ -3,6 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "unset:git-hooks-path": "git config --unset core.hooksPath",
+    "simple-git-hooks": "npx simple-git-hooks",
+    "postinstall": "is-ci || npm run simple-git-hooks",
+    "prettier": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\"",
+    "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "lint": "run-s prettier eslint",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -10,15 +16,36 @@
     "astro": "astro"
   },
   "dependencies": {
+    "canvas-confetti": "1.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.5.10",
     "@astrojs/mdx": "2.3.1",
     "@astrojs/tailwind": "5.1.0",
     "@types/canvas-confetti": "1.6.3",
+    "@typescript-eslint/eslint-plugin": "7.7.1",
+    "@typescript-eslint/parser": "7.7.1",
     "astro": "4.6.3",
     "autoprefixer": "10.4.15",
-    "canvas-confetti": "1.9.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-astro": "0.34.0",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "is-ci": "3.0.1",
+    "lint-staged": "15.2.2",
+    "npm-run-all2": "6.1.2",
     "postcss": "8.4.28",
+    "prettier": "3.2.5",
+    "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-tailwindcss": "0.5.14",
+    "simple-git-hooks": "2.11.1",
     "tailwindcss": "3.3.5",
-    "@astrojs/check": "0.5.10",
     "typescript": "5.4.5"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,md,mdx,astro}": "prettier --write",
+    "src/**/*.{js,ts,jsx,tsx,astro}": "eslint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }

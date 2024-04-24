@@ -9,13 +9,14 @@ import Link from '@components/Link.astro';
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<Layout content={{
-	title: "Astro + TS + TailwindCSS"
-}}>
-		<div class="grid place-items-center h-screen content-center">
+<Layout
+  content={{
+    title: 'Astro + TS + TailwindCSS'
+  }}
+>
+  <div class="grid h-screen place-items-center content-center">
+    <ConfettiButton>Tailwind Button in Astro!</ConfettiButton>
 
-			<ConfettiButton>Tailwind Button in Astro!</ConfettiButton>
-
-			<Link href="/markdown-page">Markdown is also supported...</Link>
-		</div>
+    <Link href="/markdown-page">Markdown is also supported...</Link>
+  </div>
 </Layout>
