@@ -6,5 +6,6 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"]
     }
-  }
+  },
+  "exclude": ["dist"]
 }
