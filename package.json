@@ -18,13 +18,13 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true npm run preview"
   },
   "dependencies": {
-    "canvas-confetti": "1.9.1"
+    "canvas-confetti": "1.9.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.5.10",
     "@astrojs/mdx": "2.3.1",
     "@astrojs/tailwind": "5.1.0",
-    "@types/canvas-confetti": "1.6.3",
+    "@types/canvas-confetti": "1.6.4",
     "@typescript-eslint/eslint-plugin": "7.7.1",
     "@typescript-eslint/parser": "7.7.1",
     "astro": "4.8.2",
