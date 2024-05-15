@@ -27,7 +27,7 @@
     "@types/canvas-confetti": "1.6.4",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
-    "astro": "4.8.2",
+    "astro": "4.8.4",
     "autoprefixer": "10.4.19",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
