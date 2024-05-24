@@ -23,7 +23,8 @@
         "dbaeumer.vscode-eslint",
         "astro-build.astro-vscode",
         "bradlc.vscode-tailwindcss",
-        "unifiedjs.vscode-mdx"
+        "unifiedjs.vscode-mdx",
+        "meganrogge.template-string-converter"
       ],
       "settings": {
         "files.autoSave": "onFocusChange",
