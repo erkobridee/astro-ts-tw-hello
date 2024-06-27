@@ -5,6 +5,8 @@
 // https://docs.astro.build/en/guides/typescript/#built-in-html-attributes
 import type { HTMLAttributes } from 'astro/types';
 
+import cn from '~/utils/cn';
+
 // TODO: check the following astro component 'astro-link'
 // https://github.com/JulianCataldo/web-garden/tree/develop/components/Link
 
@@ -48,9 +50,43 @@ if (!external) {
 // Styled by Tailwind :)
 ---
 
+<style>
+  .external-link {
+    --icon-margin: 2px;
+    --icon-size: 16px;
+
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: '';
+
+      margin-top: var(--icon-margin);
+      margin-left: var(--icon-margin);
+
+      width: var(--icon-size);
+      height: var(--icon-size);
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(transparent, transparent),
+        url(images/external-link.svg);
+    }
+  }
+</style>
+
 <a
   {...extraLinkProps}
-  class="p-4 underline transition-colors duration-200 ease-in-out hover:text-purple-500"
+  class={cn(
+    `
+    p-4 underline
+    transition-colors
+    duration-200 ease-in-out
+    hover:text-purple-500
+  `,
+    { 'external-link': external }
+  )}
 >
   <slot />
 </a>
