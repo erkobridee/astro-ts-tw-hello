@@ -2,6 +2,8 @@
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 
+import redefineUrl from '~/utils/redefineUrl';
+
 interface IContent {
   title: string;
 }
@@ -12,6 +14,16 @@ interface Props {
 }
 
 const { content } = Astro.props;
+
+// https://docs.astro.build/en/basics/astro-syntax/#fragments
+// defining its value only once
+const styleFragment = `
+<style>
+  :root {
+    --externalIconUrl: url(${redefineUrl('images/external-link.svg')});
+  }
+</style>
+`;
 ---
 
 <html lang="en">
@@ -21,6 +33,8 @@ const { content } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{content.title}</title>
+
+    <Fragment set:html={styleFragment} />
   </head>
   <body>
     <slot />
