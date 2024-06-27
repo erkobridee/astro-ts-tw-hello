@@ -6,6 +6,7 @@
 import type { HTMLAttributes } from 'astro/types';
 
 import cn from '~/utils/cn';
+import redefineUrl from '~/utils/redefineUrl';
 
 // TODO: check the following astro component 'astro-link'
 // https://github.com/JulianCataldo/web-garden/tree/develop/components/Link
@@ -27,30 +28,18 @@ let extraLinkProps: HTMLAttributes<'a'> = {
 };
 
 if (!external) {
-  const baseUrl = `${import.meta.env.BASE_URL}`;
-
-  let newHref = baseUrl;
-
-  const hrefStartWithSlash = href.startsWith('/');
-
-  if (baseUrl === '/') {
-    newHref = hrefStartWithSlash ? href : `/${href}`;
-  } else {
-    const baseUrlEndWithSlash = baseUrl.endsWith('/');
-
-    newHref = `${baseUrl}${!baseUrlEndWithSlash && !hrefStartWithSlash ? `/` : ''}${href}`;
-  }
-
   extraLinkProps = {
-    href: newHref,
+    href: redefineUrl(href),
     rel: 'prefetch'
   };
 }
 
+const externalIconUrl = `url(${redefineUrl('images/external-link.svg')})`;
+
 // Styled by Tailwind :)
 ---
 
-<style>
+<style define:vars={{ externalIconUrl }}>
   .external-link {
     --icon-margin: 2px;
     --icon-size: 16px;
@@ -71,7 +60,7 @@ if (!external) {
       background-size: contain;
       background-repeat: no-repeat;
       background-image: linear-gradient(transparent, transparent),
-        url(images/external-link.svg);
+        var(--externalIconUrl);
     }
   }
 </style>
