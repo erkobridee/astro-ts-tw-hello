@@ -14,10 +14,20 @@ import Link from '~/components/Link.astro';
     title: 'Astro + TS + TailwindCSS'
   }}
 >
-  <div class="grid h-screen place-items-center content-center">
+  <div class="grid h-screen place-items-center content-center space-y-4">
     <ConfettiButton>Tailwind Button in Astro!</ConfettiButton>
 
-    <Link href="/markdown-page">Markdown is also supported...</Link>
+    <div class="w-full border-b border-gray-300"></div>
+
+    <div class="flex flex-col items-center space-y-4">
+      <div class="font-bold">Available Pages:</div>
+      <div>
+        <Link href="/markdown-page">Markdown is also supported...</Link> |
+        <Link href="/search?q=Hello World">Search 'Hello World'</Link>
+      </div>
+    </div>
+
+    <div class="w-full border-b border-gray-300"></div>
 
     <Link href="https://github.com/erkobridee">GitHub - Erko Bridee</Link>
   </div>
