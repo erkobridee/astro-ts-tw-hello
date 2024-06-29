@@ -57,7 +57,6 @@ So later on, I saw some cases where it's been using the pattern `#* -> src/*` ( 
 ## Test it online
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/erkobridee/astro-ts-tw-hello)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/erkobridee/astro-ts-tw-hello)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/erkobridee/astro-ts-tw-hello?devcontainer_path=.devcontainer/devcontainer.json)
 
 ## Setup a new project using this repository
