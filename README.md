@@ -8,9 +8,19 @@
 
   - [[GitHub] erkobridee/devcontainer-hello](https://github.com/erkobridee/devcontainer-hello) - Learning about Development Containers
 
+## import path alias
+
+It's commonly used the pattern `@* -> src/*`, but this approach annoys me due to the current npm package namespaces ( [scopes | npm docs](https://docs.npmjs.com/about-scopes) ) which normally starts with `@{user_name/org_name}`.
+
+So to avoid that I tested the pattern `~/* -> src/*`, inspired on Unix OS, but those 2 caracteres for a lazy person like me it's too much.
+
+So later on, I saw some cases where it's been using the pattern `#* -> src/*` ( [tsconfig.json](/tsconfig.json) ) which avoid the issue from `@`.
+
 ## Astro
 
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
+
+  - [Install and set up Astro](https://docs.astro.build/en/install-and-setup/)
 
   - [Project Structure | Astro Docs](https://docs.astro.build/en/basics/project-structure/)
 
@@ -26,19 +36,7 @@
 
     - [Create gh-pages branch in existing repo | jf](https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/)
 
-### with Tailwind
-
-```sh
-npm create astro@latest -- --template with-tailwindcss
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
-
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
-
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+  - [@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
 
 ### Editor Setup
 
@@ -55,3 +53,25 @@ For complete setup instructions, please see our [Tailwind Integration Guide](htt
 - [Get VSCode, eslint & prettier working with Astro | Geek's blog](https://patheticgeek.dev/blog/astro-prettier-eslint-vscode) (2023/02/11)
 
 - [Effortless Code Styling: Configuring Astro with Prettier, ESLint, and Tailwind CSS | Raj Vadeghar](https://r44j.dev/blog/beginner-s-guide-to-setting-up-astro-astro-prettier-eslint-tailwind-css/) (2024/03/03)
+
+## Test it online
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/erkobridee/astro-ts-tw-hello)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/erkobridee/astro-ts-tw-hello)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/erkobridee/astro-ts-tw-hello?devcontainer_path=.devcontainer/devcontainer.json)
+
+## Setup a new project using this repository
+
+You can use the `Use this template ` button
+
+### degit
+
+```sh
+npx degit erkobridee/astro-ts-tw-hello {project_name}
+```
+
+### create a new project based on a GitHub repository’s main branch
+
+```sh
+npm create astro@latest -- --template erkobridee/astro-ts-tw-hello
+```
