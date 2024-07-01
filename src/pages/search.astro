@@ -29,17 +29,29 @@ import Link from '#components/Link.astro';
 </Layout>
 
 <script>
-  // https://raphaelferrand.com/posts/scripts-view-transitions-astrojs/
-  // https://docs.astro.build/en/guides/view-transitions/#astroafter-swap
-  document.addEventListener('astro:after-swap', () => {
+  let isReaded = false;
+
+  const readQueryParams = () => {
+    if (isReaded) true;
+
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
 
     console.log('URLSearchParams', params);
 
+    if (Object.keys(params).length > 0) {
+      isReaded = true;
+    }
+
     const searchParams = document.querySelector('div#search-params');
     if (searchParams) {
       searchParams.innerHTML = JSON.stringify(params, null, 2);
     }
-  });
+  };
+
+  // https://raphaelferrand.com/posts/scripts-view-transitions-astrojs/
+  // https://docs.astro.build/en/guides/view-transitions/#astroafter-swap
+  document.addEventListener('astro:after-swap', readQueryParams);
+
+  readQueryParams();
 </script>
