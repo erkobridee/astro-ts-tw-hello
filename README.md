@@ -18,6 +18,8 @@ So later on, I saw some cases where it's been using the pattern `#* -> src/*` ( 
 
 ## Astro
 
+- [[YouTube] Astro in 100 Seconds | Fireship](https://www.youtube.com/watch?v=dsTXcSeAZq8) ( 2021-07-15 )
+
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
 
   - [Install and set up Astro](https://docs.astro.build/en/install-and-setup/)
@@ -29,6 +31,12 @@ So later on, I saw some cases where it's been using the pattern `#* -> src/*` ( 
   - [Markdown & MDX | Astro Docs](https://docs.astro.build/en/guides/markdown-content/)
 
     - [Configuring Markdown and MDX](https://docs.astro.build/en/guides/markdown-content/#configuring-markdown-and-mdx)
+
+  - [View Transitions | Astro Docs](https://docs.astro.build/en/guides/view-transitions/)
+
+    - [astro:after-swap](https://docs.astro.build/en/guides/view-transitions/#astroafter-swap)
+
+    - [Astro View Transitions | Chrome for Developers](https://developer.chrome.com/blog/astro-view-transitions?hl=en) - [live](https://live-transitions.pages.dev/), [source code](https://github.com/Charca/view-transitions-live)
 
   - [Deploy your Astro Site to GitHub Pages | Astro Docs](https://docs.astro.build/en/guides/deploy/github/)
 

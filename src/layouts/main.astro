@@ -2,6 +2,9 @@
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 
+// https://docs.astro.build/en/reference/api-reference/#viewtransitions-
+import { ViewTransitions } from 'astro:transitions';
+
 import redefineUrl from '#utils/redefineUrl';
 
 interface IContent {
@@ -35,6 +38,7 @@ const styleFragment = `
     <title>{content.title}</title>
 
     <Fragment set:html={styleFragment} />
+    <ViewTransitions />
   </head>
   <body>
     <slot />
