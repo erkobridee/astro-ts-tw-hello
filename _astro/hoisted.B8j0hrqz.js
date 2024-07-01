@@ -1,1 +1,0 @@
-import"./hoisted.Oozc_hRb.js";document.addEventListener("astro:after-swap",()=>{const e=new URLSearchParams(window.location.search),r=Object.fromEntries(e.entries());console.log("URLSearchParams",r);const a=document.querySelector("div#search-params");a&&(a.innerHTML=JSON.stringify(r,null,2))});
