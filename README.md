@@ -67,7 +67,7 @@ Following a Unix OS approach, that beens said so we have the following alias map
 
 ## Setup a new project using this repository
 
-You can use the `Use this template ` button
+You can use the `Use this template` button
 
 ### degit
 
