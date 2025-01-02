@@ -2,8 +2,11 @@
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
 
-// https://docs.astro.build/en/reference/api-reference/#viewtransitions-
-import { ViewTransitions } from 'astro:transitions';
+/*
+  https://docs.astro.build/en/guides/view-transitions/
+  https://docs.astro.build/en/reference/modules/astro-transitions/
+*/
+import { ClientRouter } from 'astro:transitions';
 
 import redefineUrl from '~/utils/redefineUrl';
 
@@ -38,7 +41,7 @@ const styleFragment = `
     <title>{content.title}</title>
 
     <Fragment set:html={styleFragment} />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body>
     <slot />
