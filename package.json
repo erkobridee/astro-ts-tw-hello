@@ -18,7 +18,7 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true npm run preview"
   },
   "dependencies": {
-    "astro": "5.2.1",
+    "astro": "5.2.3",
     "canvas-confetti": "1.9.3"
   },
   "devDependencies": {
