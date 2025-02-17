@@ -13,6 +13,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "sync": "astro sync",
     "astro": "astro",
     "gh-pages-build": "cross-env GITHUB_PAGES=true npm run build",
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true npm run preview"
