@@ -4,6 +4,9 @@ import js from '@eslint/js';
 // https://github.com/ota-meshi/eslint-plugin-astro?tab=readme-ov-file#configuration
 import eslintPluginAstro from 'eslint-plugin-astro';
 
+// https://www.npmjs.com/package/globals
+import globals from 'globals';
+
 //---///
 
 export default [
@@ -11,6 +14,16 @@ export default [
 
   ...eslintPluginAstro.configs.recommended,
   ...eslintPluginAstro.configs['jsx-a11y-strict'],
+
+  {
+    files: ['**/*.mjs'],
+
+    languageOptions: {
+      globals: {
+        ...globals.node
+      }
+    }
+  },
 
   {
     rules: {
