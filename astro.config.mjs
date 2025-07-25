@@ -1,7 +1,7 @@
 // https://docs.astro.build/en/reference/configuration-reference/
+import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
-import { defineConfig } from 'astro/config';
 
 // https://tailwindcss.com/docs/installation/framework-guides/astro
 import tailwindcss from '@tailwindcss/vite';
@@ -16,7 +16,7 @@ const { name, github_pages } = packageJSON;
 const isGitHubPagesBuild = !!process.env.GITHUB_PAGES;
 const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
 
-/** @type {import('astro/config').config} */
+/** @type {import('astro').AstroUserConfig} */
 const baseConfig = {
   integrations: [mdx()],
   vite: {
