@@ -1,11 +1,10 @@
-# astro-ts-tw-hello
+# astro-ts-tw-hello [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/erkobridee/astro-ts-tw-hello)
 
 [Astro Build](https://astro.build/) using [TypeScript](https://www.typescriptlang.org/) plus [TailwindCSS](https://tailwindcss.com/)
 
 ## Local Development
 
 - [VS Code](https://code.visualstudio.com/) + [Development Containers](https://containers.dev/) ( [Customizations](https://containers.dev/supporting#visual-studio-code) | [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) )
-
   - [[GitHub] erkobridee/devcontainer-hello](https://github.com/erkobridee/devcontainer-hello) - Learning about Development Containers
 
 ## import path alias
@@ -19,7 +18,6 @@ Following a Unix OS approach, that beens said so we have the following alias map
 - [[YouTube] Astro in 100 Seconds | Fireship](https://www.youtube.com/watch?v=dsTXcSeAZq8) ( 2021-07-15 )
 
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
-
   - [Install and set up Astro](https://docs.astro.build/en/install-and-setup/)
 
   - [Project Structure | Astro Docs](https://docs.astro.build/en/basics/project-structure/)
@@ -27,35 +25,28 @@ Following a Unix OS approach, that beens said so we have the following alias map
   - [Import Aliases | Astro Docs](https://docs.astro.build/en/guides/aliases/)
 
   - [Markdown & MDX | Astro Docs](https://docs.astro.build/en/guides/markdown-content/)
-
     - [Configuring Markdown and MDX](https://docs.astro.build/en/guides/markdown-content/#configuring-markdown-and-mdx)
 
   - [View Transitions | Astro Docs](https://docs.astro.build/en/guides/view-transitions/)
-
     - [astro:after-swap](https://docs.astro.build/en/guides/view-transitions/#astroafter-swap)
 
     - [Astro View Transitions | Chrome for Developers](https://developer.chrome.com/blog/astro-view-transitions?hl=en) - [live](https://live-transitions.pages.dev/), [source code](https://github.com/Charca/view-transitions-live)
 
   - [Deploy your Astro Site to GitHub Pages | Astro Docs](https://docs.astro.build/en/guides/deploy/github/)
-
     - [[GitHub] withastro/github-pages](https://github.com/withastro/github-pages) - Automatically deploy an Astro site to GitHub Pages
 
     - [Create gh-pages branch in existing repo | jf](https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/)
 
   - [Deprecated] [@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
-
     - [Tailwind 4 support](https://astro.build/blog/astro-520/#tailwind-4-support) >>> [Astro TailwindCSS Integration](https://docs.astro.build/en/guides/styling/#tailwind) >>> [Install Tailwind CSS v4 with Astro](https://tailwindcss.com/docs/installation/framework-guides/astro)
 
 ### Editor Setup
 
 - [Editor Setup | Astro Docs](https://docs.astro.build/en/editor-setup/)
-
   - [ESLint](https://docs.astro.build/en/editor-setup/#eslint)
-
     - [[GitHub] ota-meshi/eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 
   - [Prettier](https://docs.astro.build/en/editor-setup/#prettier)
-
     - [[GitHub] withastro/prettier-plugin-astro](https://github.com/withastro/prettier-plugin-astro)
 
 - [Get VSCode, eslint & prettier working with Astro | Geek's blog](https://patheticgeek.dev/blog/astro-prettier-eslint-vscode) (2023/02/11)
