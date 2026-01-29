@@ -11,7 +11,7 @@
 
 It's commonly used the pattern `@* -> src/*`, but this approach annoys me due to the current npm package namespaces ( [scopes | npm docs](https://docs.npmjs.com/about-scopes) ) which normally starts with `@{user_name/org_name}`.
 
-Following a Unix OS approach, that beens said so we have the following alias mapping `~/* -> src/*` ( [tsconfig.json](/tsconfig.json) ) which avoid the issue from `@`.
+Following a Linux/Unix OS approach, we have the following alias mapping `~/* -> src/*` ( [tsconfig.json](/tsconfig.json) ) which avoids the issue from `@`.
 
 ## Astro
 
