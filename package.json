@@ -56,5 +56,8 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "github_pages": "https://erkobridee.github.io"
+  "github_pages": "https://erkobridee.github.io",
+  "overrides": {
+    "vite": "7.3.1"
+  }
 }
