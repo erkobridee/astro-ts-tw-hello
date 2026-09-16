@@ -1,6 +1,7 @@
 allowBuilds:
   esbuild: true
   simple-git-hooks: true
+minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - '@types/node@26.6.1'
   - autoprefixer@10.6.1
