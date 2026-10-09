@@ -44,7 +44,7 @@ importers:
         version: 8.71.0(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
       autoprefixer:
         specifier: 10.6.1
-        version: 10.6.1(postcss@8.5.28)
+        version: 10.6.1(postcss@8.5.29)
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -70,8 +70,8 @@ importers:
         specifier: 9.0.3
         version: 9.0.3
       postcss:
-        specifier: 8.5.28
-        version: 8.5.28
+        specifier: 8.5.29
+        version: 8.5.29
       prettier:
         specifier: 3.9.9
         version: 3.9.9
@@ -3846,13 +3846,13 @@ snapshots:
       - uploadthing
       - yaml
 
-  autoprefixer@10.6.1(postcss@8.5.28):
+  autoprefixer@10.6.1(postcss@8.5.29):
     dependencies:
       browserslist: 4.29.0
       caniuse-lite: 1.0.30001810
       fraction.js: 5.3.4
       picocolors: 1.1.1
-      postcss: 8.5.28
+      postcss: 8.5.29
       postcss-value-parser: 4.2.0
 
   axobject-query@4.1.0: {}
@@ -4067,7 +4067,7 @@ snapshots:
       eslint: 10.12.0(jiti@2.7.0)
       espree: 11.2.0
       globals: 17.13.0
-      postcss: 8.5.28
+      postcss: 8.5.29
       postcss-selector-parser: 7.1.6
       synckit: 0.11.13
     optionalDependencies:
