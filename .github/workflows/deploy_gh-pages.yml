@@ -47,7 +47,7 @@ jobs:
         run: pnpm lint
 
       - name: Build
-        run: npm run gh-pages-build
+        run: pnpm gh-pages-build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
