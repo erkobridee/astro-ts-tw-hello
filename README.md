@@ -1,4 +1,4 @@
-# astro-ts-tw-hello [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/erkobridee/astro-ts-tw-hello)
+# astro-ts-tw-hello [![Ask DeepWiki](public/ask-deepwiki-badge.svg)](https://deepwiki.com/erkobridee/astro-ts-tw-hello)
 
 [Astro Build](https://astro.build/) using [TypeScript](https://www.typescriptlang.org/) plus [TailwindCSS](https://tailwindcss.com/)
 
