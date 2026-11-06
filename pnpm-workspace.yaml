@@ -1,10 +1,4 @@
 allowBuilds:
-  esbuild: true
-  simple-git-hooks: true
-minimumReleaseAgeExclude:
-  - '@types/node@26.6.1'
-  - autoprefixer@10.6.1
-  - '@astrojs/ts-plugin@1.10.12'
-  - astro@7.3.3
-  - eslint-plugin-astro@3.2.0
-  - prettier@3.9.7
+  simple-git-hooks: false
+overrides:
+  "@emnapi/runtime": "1.11.3"
