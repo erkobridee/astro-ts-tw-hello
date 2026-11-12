@@ -20,12 +20,12 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true pnpm preview"
   },
   "dependencies": {
-    "astro": "7.4.9",
+    "astro": "7.4.10",
     "canvas-confetti": "1.9.4"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
-    "@astrojs/mdx": "8.1.3",
+    "@astrojs/mdx": "8.1.4",
     "@astrojs/ts-plugin": "1.11.0",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.5",
