@@ -73,3 +73,7 @@ npx degit erkobridee/astro-ts-tw-hello {project_name}
 ```sh
 npm create astro@latest -- --template erkobridee/astro-ts-tw-hello
 ```
+
+## Useful References
+
+- [[GitHub] shadcn-ui/cn](https://github.com/shadcn-ui/cn) - cn is a new engine for Tailwind class merging and conflict resolution. It replaces tailwind-merge and clsx. Same APIs. Full parity. And it is 30× faster.
